@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/adminlte.min.css")}}">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
         <!-- CSS Propios -->
         @yield("styles")
     </head>
