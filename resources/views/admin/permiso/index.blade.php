@@ -6,10 +6,11 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card card-primary">
+                <!-- /.card-header -->
                 <div class="card-header">
                     <h3 class="card-title">Permisos</h3>
                 </div>
-                <!-- /.card-header -->
+                <!-- /.card-body -->
                 <div class="card-body table-responsive p-0">
                     <table class="table table-bordered table-hover text-nowrap table-striped">
                         <thead>

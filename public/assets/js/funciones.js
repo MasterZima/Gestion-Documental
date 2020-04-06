@@ -6,7 +6,7 @@ var Documental = function () {
                 rules: reglas,
                 messages: mensajes,
                 errorElement: 'span', //default input error message container
-                errorClass: 'text-danger', // default input error message class
+                errorClass: 'help-block help-block-error', // default input error message class
                 focusInvalid: false, // do not focus the last invalid input
                 ignore: "", // validate all fields including form hidden input
                 highlight: function (element, errorClass, validClass) { // hightlight error inputs

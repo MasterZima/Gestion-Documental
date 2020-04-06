@@ -13,13 +13,14 @@
             @include('includes.form-error')
             @include('includes.mensaje')
             <div class="card card-info">
+                <!-- /.card-header -->
                 <div class="card-header">
                     <h3 class="card-title">Crear Menus</h3>
                 </div>
                 <!-- form start -->
                 <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST" autocomplete="off">
                     @csrf
-                    <!-- /.card-header -->
+                    <!-- /.card-body -->
                     <div class="card-body">
                        @include('admin.menu.form')
                     </div>
