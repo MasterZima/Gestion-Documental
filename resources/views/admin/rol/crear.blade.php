@@ -1,10 +1,10 @@
 @extends("theme.$theme.layout")
 @section('titulo')
-    Sistema Menus
+    Sistema Roles
 @endsection
 
 @section("scripts")
-<script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/pages/scripts/admin/crear.js")}}" type="text/javascript"></script>
 @endsection
 
 @section('contenido')
@@ -15,19 +15,19 @@
             <div class="card card-success">
                 <!-- /.card-header -->
                 <div class="card-header">
-                    <h3 class="card-title">Crear Menus</h3>
+                    <h3 class="card-title">Crear Rol</h3>
                     <div class="card-tools">
-                        <a href="{{route('menu')}}" class="btn btn-block btn-light btn-sm text-dark">
+                        <a href="{{route('rol')}}" class="btn btn-block btn-outline-primary btn-sm border-0">
                             <i class="fas fa-reply-all"></i> Volver al listado
                         </a>
                     </div>
                 </div>
                 <!-- form start -->
-                <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST" autocomplete="off">
+                <form action="{{route('guardar_rol')}}" id="form-general" class="form-horizontal" method="POST" autocomplete="off">
                     @csrf
                     <!-- /.card-body -->
                     <div class="card-body">
-                       @include('admin.menu.form')
+                       @include('admin.rol.form')
                     </div>
                     <div class="card-footer">
                         @include('includes.boton-form-crear')

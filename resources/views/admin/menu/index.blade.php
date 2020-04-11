@@ -23,19 +23,26 @@
             <!-- /.card-header -->
             <div class="card-header with-border">
                 <h3 class="card-title">Menus</h3>
+                <div class="card-tools">
+                    <a href="{{route('crear_menu')}}" class="btn btn-block btn-light btn-sm text-dark">
+                        <i class="fas fa-plus-circle"></i> Nuevo Registro
+                    </a>
+                </div>
             </div>
             <div class="card-body table-responsive p-3">
-                @csrf
-                <div class="dd" id="nestable">
-                    <ol class="dd-list">
-                        @foreach ($menus as $key => $item)
-                            @if ($item["menu_id"] != 0)
-                                @break
-                            @endif
-                            @include("admin.menu.menu-item",["item" => $item])
-                        @endforeach
-                    </ol>
-                </div>
+                <table class="table table-bordered table-hover text-nowrap table-striped">
+                    @csrf
+                    <div class="dd" id="nestable">
+                        <ol class="dd-list">
+                            @foreach ($menus as $key => $item)
+                                @if ($item["menu_id"] != 0)
+                                    @break
+                                @endif
+                                @include("admin.menu.menu-item",["item" => $item])
+                            @endforeach
+                        </ol>
+                    </div>
+                </table>
             </div>
         </div>
     </div>

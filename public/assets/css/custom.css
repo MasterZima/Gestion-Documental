@@ -2,3 +2,43 @@ label.requerido:after{
     content: " *";
     color: #e73d4a
 }
+.btn-accion-editar {
+    cursor: pointer;
+    border: none;
+    background: 0;
+    padding: 0 0 0 5px;
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+.btn-accion-editar:hover {
+    cursor: pointer;
+    border: none;
+    background: 0;
+    padding: 0 0 0 5px;
+    font-size: 14px !important;
+    line-height: 1.5;
+    color: #ffc107;
+}
+.btn-accion-eliminar {
+    cursor: pointer;
+    border: none;
+    background: 0;
+    padding: 0 0 0 5px;
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+.btn-accion-eliminar:hover {
+    cursor: pointer;
+    border: none;
+    background: 0;
+    padding: 0 0 0 5px;
+    font-size: 14px !important;
+    line-height: 1.5;
+    color: #dc3545;
+}
+.d-inline{
+    display: inline;
+}
+.width70{
+    width: 70px !important;
+}
