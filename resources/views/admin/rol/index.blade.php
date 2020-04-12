@@ -21,6 +21,7 @@
                     </a>
                 </div>
             </div>
+            <!-- /.card-body -->
             <div class="card-body">
                 <table class="table table-bordered table-hover text-nowrap table-striped" id="tabla-data">
                     <thead>

@@ -1,6 +1,6 @@
 @extends("theme.$theme.layout")
 @section("titulo")
-    Sistema Menus
+    Sistema Menús
 @endsection
 
 @section("styles")
@@ -22,9 +22,9 @@
         <div class="card card-primary">
             <!-- /.card-header -->
             <div class="card-header with-border">
-                <h3 class="card-title">Menus</h3>
+                <h3 class="card-title">Menús</h3>
                 <div class="card-tools">
-                    <a href="{{route('crear_menu')}}" class="btn btn-block btn-light btn-sm text-dark">
+                    <a href="{{route('crear_menu')}}" class="btn btn-block btn-outline-success btn-sm border-0">
                         <i class="fas fa-plus-circle"></i> Nuevo Registro
                     </a>
                 </div>

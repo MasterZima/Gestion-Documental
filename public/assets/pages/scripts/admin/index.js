@@ -27,7 +27,7 @@ $(document).ready(function () {
                     form.parents('tr').remove();
                     Documental.notificaciones('El registro fue eliminado correctamente', 'Documental', 'success');
                 } else {
-                    Documental.notificaciones('El registro no pudo ser eliminado, hay recursos usandolo', 'Biblioteca', 'error');
+                    Documental.notificaciones('El registro no pudo ser eliminado, hay recursos usandolo', 'Documental', 'error');
                 }
 
             },

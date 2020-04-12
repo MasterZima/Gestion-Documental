@@ -1,6 +1,6 @@
 @extends("theme.$theme.layout")
 @section('titulo')
-    Sistema Menus
+    Sistema Menús
 @endsection
 
 @section("scripts")
@@ -15,9 +15,9 @@
             <div class="card card-success">
                 <!-- /.card-header -->
                 <div class="card-header">
-                    <h3 class="card-title">Crear Menus</h3>
+                    <h3 class="card-title">Crear Menús</h3>
                     <div class="card-tools">
-                        <a href="{{route('menu')}}" class="btn btn-block btn-light btn-sm text-dark">
+                        <a href="{{route('menu')}}" class="btn btn-block btn-outline-primary btn-sm border-0">
                             <i class="fas fa-reply-all"></i> Volver al listado
                         </a>
                     </div>
