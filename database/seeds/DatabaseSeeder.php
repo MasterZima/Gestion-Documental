@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Stmt\Foreach_;
 
 class DatabaseSeeder extends Seeder
@@ -13,10 +14,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->truncateTablas([
-            'rol'
+            'rol',
+            'usuario',
+            'usuario_rol'
         ]);
         // $this->call(UsersTableSeeder::class);
         $this->call(TablaRolSeeder::class);
+        $this->call(TablaUsuarioSeeder::class);
     }
 
     protected function truncateTablas(array $tablas)
