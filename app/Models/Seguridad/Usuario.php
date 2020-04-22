@@ -5,7 +5,7 @@ namespace App\Models\Seguridad;
 use App\Models\Admin\Rol;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Support\Facades\Session as FacadesSession;
+use Illuminate\Support\Facades\Session;
 
 class Usuario extends Authenticatable
 {
@@ -22,7 +22,7 @@ class Usuario extends Authenticatable
     public function setSession($roles)
     {
        if (count($roles) == 1) {
-            FacadesSession::put(
+            Session::put(
                 [
                     'rol_id' => $roles[0]['id'],
                     'rol_nombre' => $roles[0]['nombre'],

@@ -25,16 +25,7 @@
             <div class="card">
                 <div class="card-body login-card-body">
                     <p class="login-box-msg">Inicio su sesión</p>
-                    @if ($errors->any())
-                        <div class="alert alert-danger alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            <div class="alert-text">
-                                @foreach ($errors->all() as $error)
-                                    <span>{{ $error }}</span>
-                                @endforeach
-                            </div>
-                        </div>
-                    @endif
+
                     <form action="{{route('login_post')}}" method="POST" autocomplete="off">
                         @csrf
                         <div class="input-group mb-3">
@@ -53,6 +44,16 @@
                                 </div>
                             </div>
                         </div>
+                        @if ($errors->any())
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <div class="alert-text">
+                                @foreach ($errors->all() as $error)
+                                    <span>{{ $error }}</span>
+                                @endforeach
+                            </div>
+                        </div>
+                        @endif
                         <div class="row">
                             <div class="col-8"></div>
                             <!-- /.col -->
@@ -73,6 +74,8 @@
         <script src="{{asset("assets/$theme/plugins/jquery/jquery.min.js")}}"></script>
         <!-- Bootstrap 4 -->
         <script src="{{asset("assets/$theme/plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+        <!-- AdminLTE App -->
+        <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
 
     </body>
 </html>

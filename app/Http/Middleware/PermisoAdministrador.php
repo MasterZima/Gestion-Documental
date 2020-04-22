@@ -17,7 +17,9 @@ class PermisoAdministrador
     {
         if ($this->permiso())
             return $next($request);
-        return redirect('/')->withErrors(['error' => 'No tiene permiso para entrar aquí']);
+        return redirect('/')->with('mensaje','No tiene permiso para accesar a este sitio')
+                            ->with('tipo','alert alert-danger alert-dismissible')
+                            ->with('icono','icon fas fa-ban');
     }
 
     private function permiso()

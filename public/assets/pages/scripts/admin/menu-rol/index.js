@@ -21,7 +21,7 @@ function ajaxRequest (url, data) {
             if (data.estado == 1) {
                 Documental.notificaciones('El registro fue eliminado correctamente', 'Documental', 'success');
             } else {
-                Documental.notificaciones('El rol se elimino correctamente', 'Documental', 'error');
+                Documental.notificaciones('El registro no pudo ser eliminado, hay recursos usandolo', 'Documental', 'error');
             }
         }
     });
