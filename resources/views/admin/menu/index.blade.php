@@ -25,7 +25,7 @@
                 <h3 class="card-title">Menús</h3>
                 <div class="card-tools">
                     <a href="{{route('crear_menu')}}" class="btn btn-block btn-outline-success btn-sm border-0">
-                        <i class="fas fa-plus-circle"></i> Nuevo Registro
+                        <i class="fas fa-plus-circle"></i> Crear Menú
                     </a>
                 </div>
             </div>

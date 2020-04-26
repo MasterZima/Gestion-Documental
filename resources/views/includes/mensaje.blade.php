@@ -2,7 +2,7 @@
     @if (session("tipo"))
         <div class="{{ session("tipo") }}" data-auto-dismiss="5000">
     @else
-        <div class="alert alert-danger alert-dismissible" data-auto-dismiss="5000">
+        <div class="alert alert-success alert-dismissible" data-auto-dismiss="5000">
     @endif
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
     @if (session("icono"))    

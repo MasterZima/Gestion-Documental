@@ -16,6 +16,9 @@ $(document).ready(function () {
         html: true,
         container: 'body'
     });
-    $('ul.nav.nav-pills.nav-sidebar.flex-column').find('li.active').parents('li').addClass('active');
-    $('a.nav-link').find('a.active').parents('a').addClass('active');
+    // $('ul.nav.nav-pills.nav-sidebar.flex-column').find('li.active').parents('li').addClass('active');
+    // $('a.nav-link').find('a.active').parents('a').addClass('active');
+    var menu = $('ul.nav.nav-pills.nav-sidebar.flex-column').find('a.active').parents('li.has-treeview');
+    menu.addClass('menu-open');
+    menu.children('a').addClass('active');
 });

@@ -6,7 +6,7 @@
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Documental</span>
     </a>
 
     <!-- Sidebar -->
@@ -17,27 +17,21 @@
           <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">{{session()->get('nombre_usuario') ?? 'Invitado'}}</a>
+          <a href="#" class="d-block">{{session()->get('nombre_usuario', 'Invitado')}}</a>
         </div>
       </div>
 
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          {{-- <li class="nav-item"> --}}
-            
-            @foreach ($menusComposer as $key => $item)
-              @if ($item["menu_id"] != 0)
-                  @break
-              @endif
-              @include("theme.$theme.menu-item", ["item" => $item])
-            @endforeach
-            
-          {{-- </li> --}}
-        </ul>
-      </nav>
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+          @foreach ($menusComposer as $key => $item)
+            @if ($item["menu_id"] != 0)
+                @break
+            @endif
+            @include("theme.$theme.menu-item", ["item" => $item])
+          @endforeach
+      </ul>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
