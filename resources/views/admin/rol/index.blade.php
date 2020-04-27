@@ -37,13 +37,13 @@
                             <td>
                                 <a href="{{route('editar_rol', ['id' => $data->id])}}">
                                     <button type="submit" class="btn-accion-editar tooltipsC" title="Editar este registro">
-                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-edit"></i>
                                     </button>
                                 </a>
                                 <form action="{{route('eliminar_rol', ['id' => $data->id])}}" class="d-inline form-eliminar" method="POST">
                                     @csrf @method("delete")
                                     <button type="submit" class="btn-accion-eliminar tooltipsC" title="Eliminar este registro">
-                                        <i class="fas fa-trash-alt"></i>
+                                        <i class="fas fa-times-circle"></i>
                                     </button>
                                 </form>
                             </td>
